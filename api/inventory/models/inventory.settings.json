@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventories",
+  "info": {
+    "name": "inventory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "book": {
+      "via": "inventories",
+      "model": "book"
+    }
+  }
+}
